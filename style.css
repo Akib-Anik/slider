@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+}
+html{
+    font-size: 62.5%;
+}
+.center{
+    width: 100vw;
+    height: 100vh;
+    background: #2d3436;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 8rem;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+}
+h1::before{
+    content: '~akib_anik~';
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    color: #3ae374;
+    border-right: 0.4rem solid #3ae374;
+    animation: slide 3s linear infinite;
+    overflow: hidden;
+}
+@keyframes slide{
+    0%{
+        width:0%;
+    }
+    50%{
+        width:100% ;
+    }
+    100%{
+        width: 0;
+    }
+}
+@media(max-width:500px){
+    html{
+        font-size: 43%;
+    }
+}
